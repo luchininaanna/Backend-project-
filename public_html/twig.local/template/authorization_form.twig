@@ -1,0 +1,34 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+    <div id = "authorization_form">
+      <div class="grid-x grid-padding-x">
+         <div class="large-4 medium-3 small-1"></div>
+         <div class="large-4 medium-6 small-10 cell">
+            <div class="base_form">
+               <div class="form_name">Sign In</div>
+               <div class="authorization">
+                   <form method="post" id="ajax_form" action="">
+
+                       <input type="text" class="sign_in_username" name="login" placeholder="Username" required/>
+
+                       <input type="password" class="sign_in_password" name="password" placeholder="Password" required/>
+
+                       <div>
+                           <input class="button" type="button" id="btn" value="Sign in" />
+                           <a class="link_in_form" href="#">Forgot the password?</a>
+                           <a class="link_in_form" href="registrationForm.php">Sign Up</a>
+                       </div>
+
+                   </form>
+
+               </div>
+            </div>
+         </div>
+         <div class="large-4 medium-3 small-1"></div>
+      </div>
+    </div>
+
+    <script src="../js/eventListenerForForm.js"></script>
+    <script src="../js/form.js"></script>
+{% endblock %}

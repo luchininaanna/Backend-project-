@@ -1,0 +1,53 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+    <div id = "authorization_form">
+        <div class="grid-x grid-padding-x">
+            <div class="large-3 medium-3 small-1"></div>
+            <div class="large-6 medium-6 small-10 cell">
+                <div class="base_form">
+                    <div class="form_name">Add Event</div>
+                    <div class="registration">
+
+                        <input type="date" class="add_event_date" name="event_date" placeholder="Event date" required/>
+
+                        <input type="text" class="add_event_name" name="event_name" placeholder="Event name" required/>
+
+
+                        <select id="add_event_time_type" class = "select_option" name="event_time_type" required>
+                            <option value="exact_time" selected>Exact time</option>
+                            <option value="range">Range</option>
+                        </select>
+
+                        <div class="grid-x grid-padding-x" id = "event_time_block">
+                            <div class="large-6 medium-6 cell">
+                                Start event time<input class = "event_time" id="start_time" name="start_time" type="time">
+                            </div>
+                            <div class="large-6 medium-6 cell">
+                                Finish event time<input class = "event_time" id="finish_time" name="finish_time" type="time" disabled>
+                            </div>
+                        </div>
+
+                        <select id="select_priority" class = "select_option" name="select_priority" required>
+                            <option value="1">Must include in the schedule (can not be replaced by another event)</option>
+                            <option value="2" selected>Include in schedule (can be replaced by another event)</option>
+                        </select>
+
+                        <div>
+                            <input class="button" type="button" id="registration_submit" value="Add event" />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="large-3 medium-3 small-1"></div>
+        </div>
+    </div>
+
+
+
+    <script src="js/form.js"></script>
+    <script src="js/eventListenerForEventForm.js"></script>
+    <script src="js/eventListenerForForm.js"></script>
+
+{% endblock %}

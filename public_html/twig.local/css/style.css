@@ -1,0 +1,236 @@
+.menu-bar {
+    background: #24303c;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    min-width: 100%;
+}
+
+.orbit-image {
+    border-radius: 3px;
+}
+
+.orbit-caption {
+    border-radius: 0 0 3px 3px;
+}
+
+.menu-element:hover {
+    background: #08798b;
+    border-radius: 2px;
+}
+
+.slider_background{
+    background: #6b7f8a;
+}
+
+.a1 {
+    background: #08798b;
+}
+
+.information_about_service {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.base_form {
+    border-radius: 8px;
+}
+
+.form_name {
+    background: #08798b;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+    padding: 0.8rem;
+}
+
+.authorization {
+     position: relative;
+     margin: 0;
+     padding: 1rem;
+     border: 1px solid rgba(10, 10, 10, 0.25);
+     background-color: #91a2ac;
+     color: #0a0a0a;
+     border-radius: 0 0 8px 8px;
+}
+
+.registration {
+    position: relative;
+    margin: 0;
+    padding: 1rem;
+    border: 1px solid rgba(10, 10, 10, 0.25);
+    background-color: #24303c;
+    color: #cccdd7;
+    border-radius: 0 0 8px 8px;
+}
+
+.login_img{
+    height: 35px;
+    width: 35px;
+    float: left;
+}
+
+INPUT[class="sign_in_username"] {
+     background: url("../images/login.png") no-repeat 3px 1px;
+     background-color: white;
+     background-size: auto 90%;
+     padding-left: 40px;
+}
+
+INPUT[class="sign_in_password"] {
+    background: url("../images/password.png") no-repeat 3px 1px;
+    background-color: white;
+    background-size: auto 90%;
+    padding-left: 40px;
+}
+
+INPUT[class="sign_up_email"] {
+    background: url("../images/email.png") no-repeat 3px 1px;
+    background-color: #24303c;
+    background-size: auto 80%;
+    padding-left: 40px;
+}
+
+INPUT[class="sign_up_username"] {
+    background: url("../images/login.png") no-repeat 3px 1px;
+    background-color: #24303c;
+    background-size: auto 90%;
+    padding-left: 40px;
+}
+
+INPUT[class="sign_up_password"] {
+    background: url("../images/password.png") no-repeat 3px 1px;
+    background-color: #24303c;
+    background-size: auto 90%;
+    padding-left: 40px;
+}
+
+.link_in_form {
+    color: #193b47;
+    float: right;
+    margin-top: 9px;
+    margin-right: 20px;
+}
+
+.link_in_form:hover {
+    color: #c9594b;
+    text-decoration: underline;
+}
+
+INPUT[id="btn"] {
+    background: #08798b;
+    color: #ffffff;
+    border-radius: 2px;
+    margin: 0;
+}
+
+INPUT[id="btn"]:hover {
+    background: #69c6cd;
+    color: #0c3d5d;
+    border-radius: 2px;
+    margin: 0;
+}
+
+INPUT[class = "sign_up_first_name"] {
+    background: #24303c;
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+}
+
+INPUT[class = "sign_up_last_name"]  {
+    background: #24303c;
+    float: right;
+    width: 48%;
+    margin-left: 2%;
+}
+
+INPUT[id="registration_submit"] {
+    background: #08798b;
+    color: #ffffff;
+    border-radius: 2px;
+    margin: 0;
+}
+
+INPUT[id="registration_submit"]:hover {
+    background: #69c6cd;
+    color: #0c3d5d;
+    border-radius: 2px;
+    margin: 0;
+}
+
+.points {
+    height: 10%;
+    align: left;
+}
+
+.quote {
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.schedule_background {
+    margin-top: 44px;
+}
+
+.schedule_list {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.schedule-add-event {
+    margin-top: 20px;
+    background-color: #24303c;
+    color: #6b7f8a;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 30px;
+}
+
+INPUT[class="add_event_date"] {
+    background: url("../images/calender.png") no-repeat 3px 1px;
+    background-color: #24303c;
+    background-size: auto 90%;
+    padding-left: 40px;
+}
+
+INPUT[class="add_event_name"] {
+    background: url("../images/note.png") no-repeat 3px 1px;
+    background-color: #24303c;
+    background-size: auto 90%;
+    padding-left: 40px;
+}
+
+INPUT[class="event_time"] {
+    background: url("../images/clock.png") no-repeat 3px 1px;
+    background-color: #24303c;
+    background-size: auto 90%;
+    padding-left: 40px;
+}
+
+SELECT[class = "select_option"] {
+    background: url("../images/prioritet.png") no-repeat 3px 1px;
+    background-color: #24303c;
+    color: #cccdd7;
+    background-size: auto 90%;
+    padding-left: 40px;
+}
+
+.event_time_block {
+    color: #cccdd7;
+}
+
+.form_name {
+    color: #24303c;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.schedule_date {
+    color: #24303c;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}

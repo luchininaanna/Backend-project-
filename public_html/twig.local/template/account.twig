@@ -1,0 +1,59 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+    <div class="menu-bar">
+        <ul class="menu align-right">
+
+            <li><a id = "about_service" class="menu-element" href="https://www.google.ru">
+                <img src="images/calender.png" width="40" height="40">
+            </a></li>
+
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li>
+                    <a id = "about_service" class="menu-element" href="https://www.google.ru">
+                        <img src="images/login.png" width="40" height="40">
+                    </a>
+                    <ul class="menu vertical">
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Exit</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </ul>
+    </div>
+
+    <div class="schedule_background">
+        <div class="grid-x grid-padding-x">
+            <div class="large-2 medium-3 small-1"></div>
+            <div class="large-3 medium-6 small-10 cell">
+                <div class = "schedule_date">Date</div>
+            </div>
+            <div class="large-5 medium-6 small-10"></div>
+            <div class="large-2 medium-3 small-1"></div>
+        </div>
+
+        <div class="grid-x grid-padding-x">
+            <div class="large-2 medium-3 small-1"></div>
+            <div class="large-8 medium-6 small-10 cell">
+                <div class="schedule_list">
+                    {% block form_content %}{% endblock %}
+
+                    <div class="grid-x grid-padding-x">
+                        <div class="large-4 medium-3 small-1"></div>
+                        <div class="large-4 medium-6 small-10 cell">
+                            <div class = "schedule-add-event">
+                                <a id = "" class="" href="addEventForm.php">Добавить событие</a>
+                            </div>
+                        </div>
+                        <div class="large-4 medium-3 small-1"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="large-2 medium-3 small-1"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+{% endblock %}

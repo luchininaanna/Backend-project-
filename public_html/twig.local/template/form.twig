@@ -1,0 +1,19 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+    <div id = "authorization_form">
+        <div class="grid-x grid-padding-x">
+            <div class="large-4 medium-3 small-1"></div>
+            <div class="large-4 medium-6 small-10 cell">
+                <div class="base_form">
+                    {% block form_content %}{% endblock %}
+                </div>
+            </div>
+            <div class="large-4 medium-3 small-1"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="js/form.js"></script>
+    <script src="../js/eventListenerForForm.js"></script>
+{% endblock %}
